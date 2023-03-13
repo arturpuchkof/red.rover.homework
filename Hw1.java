@@ -1,10 +1,9 @@
-public class hw1 {
+public class Hw1 {
     public static void main(String[] args) {
         System.out.println("3");
         System.out.println("2");
         System.out.println("1");
         System.out.println("поехали!");
-
 
         System.out.println("____888888______________________________\n" +
                 "____888888______________________________\n" +
