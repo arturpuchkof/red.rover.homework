@@ -8,6 +8,7 @@ public class Hw6 {
         int sum2 = 0;
         int sum3 = 0;
         int middle = 0;
+        int count = 0;
 
         for (int i = 0; i < array.length; i++) {
             sum1 += array[i];
@@ -55,11 +56,15 @@ public class Hw6 {
             }
         }
         System.out.println("max value " + max);
+        System.out.println("++++++++++++++++++++++++++++++++++");
 
-
-
-
-
+        for (int i = 0; i < array2.length; i++) {
+            for (int j = 0; j < array2[i].length; j++) {
+                count++;
+            }
+        }
+        System.out.println("количество элементов массива " + count);
+        System.out.println("++++++++++++++++++++++++++++++++++");
     }
 
 
