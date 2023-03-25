@@ -9,9 +9,7 @@ public class Employee {
 
 
     boolean isSameName(Employee employee){
-        if(name.equals(employee.name)){
-            return true;
-        } else
-            return false;
+       return name.equals(employee.name);
+
     }
 }
