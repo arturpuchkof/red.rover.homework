@@ -5,11 +5,11 @@ public class Manager extends BaseManager {
     public Manager(String name, int baseSalary, int numberOfSubordinates) {
         super(name, baseSalary, numberOfSubordinates);
     }
-
+    @Override
     public int getSalary(){
         if (getNumberOfSubordinates() == 0){
-            return getBaseSalary();
+            return super.getSalary();
         } else
-            return getBaseSalary() * getNumberOfSubordinates();
+            return super.getSalary() * getNumberOfSubordinates();
     }
 }

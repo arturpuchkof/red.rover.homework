@@ -1,5 +1,7 @@
 package hw9;
 
+import static hw9.EmployeeUtils.searchByName;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -8,9 +10,14 @@ public class Main {
         Manager manager = new Manager("Vasa", 1000, 10);
         Director director = new Director("Dan", 1000, 10);
 
-        System.out.println(employee.getBaseSalary());
+        System.out.println(employee.getSalary());
         System.out.println("Зарплата менеджера " + manager.getSalary());
         System.out.println("Зарплата директора " + director.getSalary());
+        Employee[] employees = {manager, director, employee, baseManager};
+
+        EmployeeUtils searchByName = new EmployeeUtils();
+
+        System.out.println(searchByName("Myta", employees));
 
 
 

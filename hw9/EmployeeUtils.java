@@ -24,16 +24,16 @@ public class EmployeeUtils {
     public static int countSalary(Employee[] array){
         int sum = 0;
         for (int i = 0; i < array.length; i++) {
-            sum += array[i].getBaseSalary();
+            sum += array[i].getSalary();
         }
         return sum;
     }
 
     public static int maxSalary(Employee[] array){
-        int maxArray = array[0].getBaseSalary();
+        int maxArray = array[0].getSalary();
         for (int i = 0; i < array.length; i++) {
-            if (maxArray > array[i].getBaseSalary()) {
-                maxArray = array[i].getBaseSalary();
+            if (maxArray > array[i].getSalary()) {
+                maxArray = array[i].getSalary();
 
             }
         }
@@ -41,10 +41,10 @@ public class EmployeeUtils {
     }
 
     public static int minSalary(Employee[] array){
-        int minArray = array[0].getBaseSalary();
+        int minArray = array[0].getSalary();
         for (int i = 0; i < array.length; i++) {
-            if (minArray < array[i].getBaseSalary()) {
-                minArray = array[i].getBaseSalary();
+            if (minArray < array[i].getSalary()) {
+                minArray = array[i].getSalary();
 
             }
         }
